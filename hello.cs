@@ -25,6 +25,8 @@ namespace griffith.function
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             msg = msg ?? data?.msg;
 
+            msg = "Message: " + msg;
+            
             string top = "";
             string bottom= "";
             for (int i = 0; i < msg.Length+2; i++)
@@ -32,7 +34,7 @@ namespace griffith.function
                 top +="_";
                 bottom+="-";
             }
-            string output = $" {top}\n< Message:{msg} >\n {bottom}\n \\\n  \\\n    __\n   /  \\\n   |  |\n   @  @\n   |  |\n   || |/\n   || ||\n   |\\_/|\n   \\___/ ";
+            string output = $" {top}\n< {msg} >\n {bottom}\n \\\n  \\\n    __\n   /  \\\n   |  |\n   @  @\n   |  |\n   || |/\n   || ||\n   |\\_/|\n   \\___/ ";
 
 
             return output != null
