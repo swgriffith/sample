@@ -32,7 +32,7 @@ namespace griffith.function
                 top +="_";
                 bottom+="-";
             }
-            string output = $" {top}\n< {msg} >\n {bottom}\n \\\n  \\\n    __\n   /  \\\n   |  |\n   @  @\n   |  |\n   || |/\n   || ||\n   |\\_/|\n   \\___/ ";
+            string output = $" {top}\n< Message:{msg} >\n {bottom}\n \\\n  \\\n    __\n   /  \\\n   |  |\n   @  @\n   |  |\n   || |/\n   || ||\n   |\\_/|\n   \\___/ ";
 
 
             return output != null
