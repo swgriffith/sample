@@ -17,7 +17,7 @@ namespace griffith.function
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function recieved a message");
+            log.LogInformation("C# HTTP trigger function recieved a message.");
 
             string msg = req.Query["msg"];
 
