@@ -29,7 +29,7 @@ namespace griffith.function
             msg = msg ?? data?.msg;
 
             //build message
-            msg = "" + msg;
+            msg = "Message:" + msg;
             
 
             //Build the response text
