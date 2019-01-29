@@ -25,7 +25,7 @@ namespace griffith.function
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             msg = msg ?? data?.msg;
 
-            msg = "Msg: " + msg;
+            msg = "" + msg;
             
             string top = "";
             string bottom= "";
